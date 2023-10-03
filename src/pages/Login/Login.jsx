@@ -13,7 +13,7 @@ const Login = () => {
         const form = new FormData(e.currentTarget);
         const email = form.get('email');
         const password = form.get('password');
-        console.log(form.get('password'));
+        // console.log(form.get('password'));
         signIn(email, password)
         .then(result => {
             console.log(result.user)

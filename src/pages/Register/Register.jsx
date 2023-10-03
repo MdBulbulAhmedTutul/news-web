@@ -11,11 +11,13 @@ const Register = () => {
         e.preventDefault();
         // console.log(e.currentTarget);
         const form = new FormData(e.currentTarget);
+        // eslint-disable-next-line no-unused-vars
         const name = form.get('name');
+        // eslint-disable-next-line no-unused-vars
         const photo = form.get('photo');
         const email = form.get('email');
         const password = form.get('password')
-        console.log(name, photo, email, password);
+        // console.log(name, photo, email, password);
         createUser(email, password)
         .then(result => {
             console.log(result.user)
